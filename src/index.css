@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  html {
-    @apply bg-slate-300
+  h1 {
+    @apply text-3xl font-bold mb-2
+  }
+
+  h2 {
+    @apply text-xl font-semibold mb-1 
+  }
+
+  a {
+    @apply underline text-blue-500
   }
 }
