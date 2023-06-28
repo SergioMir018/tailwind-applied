@@ -3,16 +3,25 @@ import React from "react"
 export const MainApp = () => {
 
   return (
-    <div className="">
+    <div className="mx-2">
       <h1>This is a title</h1>
       <h2>This is a subtitle</h2>
       <p>This is a paragraph</p>
       <a href="https://github.com/SergioMir018" className="">This is a anchor</a>
-      <div>
-        <button className="">This is a button</button>
+      <div className="my-2">
+        <button className="btn bg-blue-500 px-3 py-2 rounded-lg">This is a button</button>
+      </div>
+      <div className="my-2">
+        <button className="btn bg-red-500 px-4 py-3 rounded-lg">This is another button</button>
+      </div>
+      <div className="my-2">
+        <button disabled className="btn bg-green-500 px-4 py-3 rounded-lg">This button is disable</button>
       </div>
       <div className="">
-        <input type="text" />
+        <input type="text" className="" />
+      </div>
+      <div className="">
+        <input disabled type="text" className="" />
       </div>
       <div>
         <input type="checkbox" id="checkbox" />
