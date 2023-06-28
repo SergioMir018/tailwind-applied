@@ -6,7 +6,7 @@ export const MainApp = () => {
     <div className="mx-2">
       <h1>This is a title</h1>
       <h2>This is a subtitle</h2>
-      <p>This is a paragraph</p>
+      <p>This is a <i>paragraph</i></p>
       <a href="https://github.com/SergioMir018" className="">This is a anchor</a>
       <div className="my-2">
         <button className="btn bg-blue-500 px-3 py-2 rounded-lg">This is a button</button>
@@ -26,9 +26,9 @@ export const MainApp = () => {
       <div className="">
         <input type="date" placeholder="E-mail" />
       </div>
-      <div>
+      <div className="flex items-start">
         <input type="checkbox" id="checkbox" />
-        <label htmlFor="checkbox">Checkbox</label>
+        <label htmlFor="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro voluptate sunt provident ex dolores tempore dolore beatae. Voluptatibus reprehenderit maxime enim pariatur quidem? Aliquid aspernatur facere ducimus molestiae quo.</label>
       </div>
       <div className="">
         <select className="">
