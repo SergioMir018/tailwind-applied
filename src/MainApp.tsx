@@ -18,10 +18,13 @@ export const MainApp = () => {
         <button disabled className="btn bg-green-500 px-4 py-3 rounded-lg">This button is disable</button>
       </div>
       <div className="">
-        <input type="text" className="" />
+        <input type="text" placeholder="E-mail" />
       </div>
       <div className="">
-        <input disabled type="text" className="" />
+        <input disabled type="text" placeholder="E-mail" />
+      </div>
+      <div className="">
+        <input type="date" placeholder="E-mail" />
       </div>
       <div>
         <input type="checkbox" id="checkbox" />
