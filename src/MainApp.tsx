@@ -1,6 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
+import { ArrowDown } from "./arrowDown";
 
 export const MainApp = () => {
+
+  const [isOpen, setIsOpen] = useState( false );
+  const [selectedValue, setSelectedValue] = useState("Option 1");
+
+  const selectedOptionState = () => {
+    setIsOpen( !isOpen );
+  }
+
+  const setSelectedValueState = (value: string): void => {
+    setSelectedValue( value );
+    setIsOpen( false );
+  }
 
   return (
     <div className="mx-2">
@@ -35,6 +48,21 @@ export const MainApp = () => {
           <option>Option 1</option>
           <option>Option 2</option>
         </select>
+      </div>
+      <div className="Select">
+        <div onClick={ selectedOptionState } className="flex justify-between items-center"> 
+          <span>{ selectedValue }</span>
+          <div className={ isOpen ? 'rotate-180 transition' : 'rotate-0 transition'}>
+            <ArrowDown />
+          </div>
+        </div>
+        { isOpen && (<div>
+          <ul className="flex flex-col divide-y border-t">
+            <li onClick={ () => setSelectedValueState( "Option 1" ) }>Option 1</li>
+            <li onClick={ () => setSelectedValueState( "Option 2" ) }>Option 2</li>
+            <li onClick={ () => setSelectedValueState( "Option 3" ) }>Option 3</li>
+          </ul>
+        </div>)}
       </div>
       <h1>This is another title</h1>
       <h2>This is another subtitle</h2>
